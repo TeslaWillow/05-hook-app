@@ -13,9 +13,14 @@ export const useForm = ( initialForm = {} ) => {
         console.log({ name, value });
     }
 
+    const onResetForm = () => {
+        setFormState(initialForm);
+    };
+
     return {
         ...formState,
         formState,
-        onInputChange
+        onInputChange,
+        onResetForm
     }
 }
