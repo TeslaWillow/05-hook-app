@@ -15,9 +15,7 @@ export const PokemonCard = ({ id, name, sprites = [] }) => {
         <h2 
             ref={h2ref}
             className="text-capitalize"
-        >
-            #{id} - {name}
-        </h2>
+        >#{id} - {name}</h2>
 
         <div>
             {
